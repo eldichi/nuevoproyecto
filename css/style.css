@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Open+Sans:ital,wght@1,800&family=Ubuntu:wght@300&display=swap');
+
+
+
+/*dispositivos grandes*/
+#main-content{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;}
+    
+
+*{ 
+    /*padding: 0;*/
+    box-sizing: border-box;
+
+}
+
+
+/* Estilos para encabezados y otros elementos */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+html{
+    font-size: 1rem;
+    height: 100%;
+   
+}
+
+
+p{font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+p strong{
+    text-decoration: underline;
+    color:rgb(10, 24, 152)
+}
+
+body,header,main,footer{
+    /*border: 3px black solid;*/
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+    
+}
+
+body{
+    background-color:rgb(255, 255, 255)
+}
+
+main{
+    min-height: 200px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top:10px;
+}
+
+.redes-icon{
+    font-size: 2em;
+    color:rgb(70, 107, 255);
+}
+
+.redes a{margin-left: 10px;
+    margin-right: 10px;
+   }
+
+/*contenido general*/
+main>div{
+    /*border: 2px red solid;*/
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+main>aside{
+    /*border: 2px blue solid;*/
+    min-height: 80px;
+    margin:0.5rem;
+    min-width:300px;
+    float: left;
+    width:auto;
+   
+}
+
+.contenido-segundo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header-logo{
+    width: auto;
+    display: inline-block;
+    margin:0.5rem;  
+}
+
+.header-menubar{
+    margin: 0.5rem 0 0.5rem 1rem;
+    left: auto; 
+    top:auto;
+    width: auto;
+    display: inline-block;
+    margin-right: 750px ;
+    margin-bottom: 40px;
+}
+
+.header-menubar ul{
+ list-style-type: none;}
+
+
+.header-menubar a:hover{
+    color: rgb(233, 30, 30);
+    background-color: rgb(212, 203, 172);
+    padding:10px;
+
+}  
+
+.header-menubar:active{
+    transform: scale(1.1,1.1);
+    
+}
+   
+.animate__animated.animate__animate__slideInRight{
+    --animate-duration: 2s;
+}
+    
+
+.header-menubar li{
+    float: left;
+    font-weight: 600;
+    margin: 0 0.5rem 0;
+}
+
+.header-menubar ul a{
+    font-size: 1.4rem;
+    background-color: rgb(240, 160, 160);
+    color: rgb(135, 39, 164);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-bottom: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    
+    
+}
+
+
+::selection{
+    background-color: rgb(183, 222, 232);
+ }
+
+.solucion,h2::before{
+    content: "💧";
+}
+
+.secciones h2{ 
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.secciones h3{
+    font-family: 'Dosis', sans-serif
+}
+
+.secciones{
+    /*border: 2px rgb(110, 221, 164) solid;*/
+    min-height: 50px;
+    margin: 0.5rem;0
+}
+
+.secciones article{
+    /*border: 2px coral solid;*/
+    margin: 0.5rem;
+    min-height: 20px;
+
+}
+
+.secciones div img{
+    transition: 1s;
+    overflow: hidden;
+    margin: 20px;
+    object-fit: cover;}
+
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+#imagen-placa3{
+    width: 100%;
+
+}
+
+#modelo-placa{
+    width: 100%;
+    
+}
+
+#solucion{
+    width: 100%;
+    
+}
+
+#living-placa{
+    width: 100%;
+}
+
+#antes{
+    width: 100%;
+    float: left;
+    width: 487px;
+}
+
+
+/* Definición de la cuadrícula */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las celdas */
+    padding: 20px;
+}
+
+/* Estilos para los elementos dentro de la cuadrícula */
+.article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    /* filtros fotograficos */
+    transition: 0.3s;
+    }
+  
+.article img {
+    max-width:auto;
+
+}
+
+/*@media queries*/
+
+
+/*dispositivos pequeños*/
+@media screen and (min-width:0px) and (max-width:673px){
+   body{
+    background-color: yellow;
+   }
+   .container{
+    grid-template-columns: 1fr;
+    }
+ }
+
+
+/*dispositivos medianos*/
+@media screen and (min-width:673px) and (max-width:990px){
+    body{
+    background-color: rgb(93, 93, 246);
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        }
+    
+}
+
+
+/*dispositivos grandes*/
+@media screen and (min-width:991px) and (max-width:1296px){
+    body{
+        background-color: rgb(126, 226, 55);
+    }
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+  
+}
+
+
+
+
+
+
+
+
