@@ -19,37 +19,60 @@
             </ul>
         </nav>
     </header>
-    <main id="main-content">
-        <div class="contenido-general">
-            <section class="secciones">
 
-                <form id="myForm" onsubmit="return validateForm()">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre">
-                        <span id="nombreError" class="error"></span>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+    <section class="secciones">
+        <article>
+            <h2>
+                Donde nos encontramos
+            </h2> 
+            <p>
                
-                  
-                </script>
-           
-            </section>
-            
-          </div>
-        </main>
-    
+            </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210189.6925838657!2d-58.66472402187499!3d-34.59875109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6309933ffff%3A0x468a8df782e7337d!2sPlacas%20Antihumedad%20-%20Leplak!5e0!3m2!1ses-419!2sar!4v1697493726375!5m2!1ses-419!2sar" width="740" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+    </section>
+
+
+    <form>
+   
+
+        <h3>Formulario de Contacto</h3>
+     <form id="myForm" onsubmit="return validateForm()">
+         <div>
+             <label for="nombre">Nombre:</label>
+             <input type="text" id="nombre" name="nombre">
+             <span id="nombreError" class="error"></span>
+         </div>
+         <div>
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email">
+         </div>
+         <div>
+             <label for="mensaje">Mensaje:</label>
+             <textarea id="mensaje" name="mensaje"></textarea>
+         </div>
+         <div>
+             <input type="submit" value="Enviar">
+         </div>
+     </form>
+ 
+     <script>
+         // En esta sección está el punto 3 formulario con validación Javascript 
+         function validateForm() {
+             var nombre = document.getElementById("nombre").value;
+ 
+             if (nombre == "") {
+                 document.getElementById("nombreError").innerHTML = "Por favor, ingresa tu nombre.";
+                 return false;
+             } else {
+                 document.getElementById("nombreError").innerHTML = "";
+                 // Aquí puedes agregar más validaciones si es necesario
+                 return true;
+             }
+         }
+     </script>
+ 
+
     <footer class="footer">
         <div class="redes">
             <a class="redes-icon" 
@@ -61,5 +84,6 @@
             <p class="footer">Copyright 2023-Derechos reservados</p>
         </div> 
     </footer>
+  </main>
 </body>
 </html>
